@@ -10,13 +10,8 @@
     margin: 0;
     padding: 0;
 }
-html, body{
-    display: flex;
-    flex-direction: column;
-}
-main {
-    flex: 1;
-  }
+
+
 header, main{
     margin: 0px 100px;
 }
@@ -243,6 +238,7 @@ header{
 }
 .midsection{
     gap: 30px;
+    height: fit-content;
 }
 .card{
     flex-direction: column;
