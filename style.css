@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header, main{
+    margin: 0px 100px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav div img{
+    width: 40px;
+}
+nav div ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+nav div ul li a{
+    text-decoration: none;
+
+}
+nav div button{
+    background-color: orange;
+    color: white;
+    border-radius: 13px;
+    border: none;
+    padding: 13px 35px;
+    font-weight: 700;
+}
+nav div button:hover{
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    padding: 11px 33px;
+    transition: .4s;
+}
+.icon{
+    display: none;
+}
+
+
+
+/* banner section */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.banner h1{
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+.banner p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.banner img{
+    width: 100%;
+}
+.banner button{
+    background-color: black;
+    color: white;
+    padding: 13px 35px;
+    border: none;
+    border-radius: 13px;
+    font-weight: bolder;
+}
+.banner button:hover{
+    background-color: white;
+    padding: 11px 33px;
+    border: 2px solid black;
+    color: black;
+    transition: .4s;
+}
+
+/* for mid section */
+.midsection{
+    margin: 20px 0px;
+    width: 100%;
+    height: 879px;
+    background-image: url('assets/bg.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items :center;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:60px;
+
+}
+.card div{
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 20px;
+    justify-content: space-between;
+    background-color: ;
+}
+.card h3{
+    font-size: 24px;
+}
+.card p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 34px;
+    font-weight: 500;
+}
+.card div h3,p{
+    text-align: center;
+}
+.card img, a{
+
+    display: block;
+    margin: 18px auto;
+}
+.card a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.midsection div button{
+    background-color: orange;
+    padding: 27px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    border: none;
+    margin: 9px;
+}
+
+
+
+/* for mobile screens */
+@media screen and (max-width: 576px) {
+    header, main {
+        margin: 0;
+        padding: 0px 10px;
+    }
+.list, .button{
+    display: none;
+}
+.icon{
+    display: inline-block;
+    font-size: 30px;
+}
+header{
+    border-bottom: 1px solid orange ;
+}
+.banner{
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.banner h1{
+    font-size: 32px;
+    text-align: center;
+}
+.banner p{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 19px;
+}
+.banner button{
+    display: block;
+    margin: 0 auto;
+}
+.midsection{
+    gap: 30px;
+}
+.card{
+    flex-direction: column;
+}
+.card div{
+    height: 324px;
+}
+.card h3{
+    font-size: 21px;
+}
+.card p{
+    font-size: 10px;
+    font-weight: medium;
+    line-height: 1.9;
+}
+.btn{
+    display: none;
+}
+
+}
+
+
+/* for tablet screen */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    header, main {
+        margin: 0;
+        padding: 0px 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .banner h1, p{
+        text-align: center;
+    }
+    .banner button{
+        display: block;
+        margin: 0 auto;
+    }
+    .card{
+        gap:10px;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
