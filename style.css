@@ -184,7 +184,7 @@ marquee{
     background-color: #3CD8E8;
     margin-top: 6px;
 
-    
+
 }
 .storycard{
     border-radius: 17px;
@@ -375,12 +375,7 @@ header{
 .main{
     display: none;
 }
-.story{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-}
+
 .storycard{
     height: 170px;
     width: 179px;
