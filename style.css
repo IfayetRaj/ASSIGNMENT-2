@@ -166,6 +166,11 @@ nav div button:hover{
     background-repeat: no-repeat;
     position: relative;
     padding: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
 }
 .bg{
     width: 100%;
@@ -174,6 +179,10 @@ nav div button:hover{
     position: absolute;
     top: 0;
     left: 0;
+}
+marquee{
+    background-color: #3CD8E8;
+    margin-top: 6px;
 }
 .storycard{
     border-radius: 17px;
@@ -227,6 +236,15 @@ nav div button:hover{
 .storycard h2{
     font-size: 17px;
     text-align: center;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 44px;
+    border-radius: 18px;
+    position: relative;
+    font-weight: 800;
 }
 .first .storycard h2{
     font-size: 17px;
